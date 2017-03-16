@@ -1,0 +1,77 @@
+{
+  "name": "eslint-config-plural",
+  "version": "0.1.0",
+  "description": "ESLint shareable config for the Dreidev JavaScript style guide",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pluralcom/eslint-config-plural.git"
+  },
+  "author": {
+    "name": "Plural",
+    "email": "info@plural.com",
+    "url": "https://plural.com"
+  },
+  "contributors": [{
+    "name": "Ahmed Tarek",
+    "email": "ahmed.tokyo1@gmail.com",
+    "url": "https://github.com/A-Tokyo"
+  }],
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha",
+    "coverage": "./node_modules/.bin/istanbul cover node_modules/mocha/bin/_mocha",
+    "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "plural",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint",
+    "react",
+    "react-native"
+  ],
+  "bugs": {
+    "url": "https://github.com/pluralcom/eslint-config-plural/issues"
+  },
+  "homepage": "https://github.com/pluralcom/eslint-config-plural#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^6.0.2",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-react-native": "^1.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.16",
+    "eslint": "^3.15.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.15.0"
+  }
+}
