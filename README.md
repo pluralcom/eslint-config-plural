@@ -1,5 +1,5 @@
 # Plural's Javascript Styleguide {
-  How Plural codes its way through;
+  How Plural paints its code;
 
 ## Getting Started
 
@@ -7,13 +7,27 @@ The linter requires eslint, and react, react-native eslint plugins, to install t
 ```
 npm install eslint eslint-plugin-react eslint-plugin-react-native --save-dev
 ```
+
 Then install eslint-config-plural by runnig:
 ```
 npm install eslint-config-plural --save-dev
 ```
 
+In your eslintrc (or its equivalent) add
+```
+...
+"extends": "plural",
+"plugins": [
+  "react",
+  "react-native"
+],
+...
+```
+
+
 ## Parents:
   eslint-config-plural extends airbnb-base style guide, appending our artistic rules
+
 
 ## Lints:
   - es6
@@ -21,6 +35,7 @@ npm install eslint-config-plural --save-dev
   - react native
 
 
-  This Package is developed and maintained by [plural](https://plural.com)
+This Package is developed and maintained by [plural](https://plural.com)
+Built with ❤️ in California
 
 # };
