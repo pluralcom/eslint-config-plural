@@ -41,7 +41,7 @@ Check the [changelog](https://github.com/pluralcom/eslint-config-plural/releases
 
 <hr>
 
-This Package is developed and maintained by [plural](https://plural.com)
+This Package is being maintained by [plural](https://plural.com)
 
 Built with ❤️ in California
 
