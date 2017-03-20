@@ -1,5 +1,6 @@
 # Plural's Javascript Styleguide {
   How Plural paints its code;
+
 [![npm version](https://badge.fury.io/js/eslint-config-plural.svg)](https://badge.fury.io/js/eslint-config-plural) [![Build Status](https://travis-ci.org/pluralcom/eslint-config-plural.svg?branch=master)](https://travis-ci.org/pluralcom/eslint-config-plural)
 
 ## Getting Started
