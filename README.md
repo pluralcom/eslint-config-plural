@@ -21,6 +21,6 @@ npm install eslint-config-plural --save-dev
   - react native
 
 
-This Package is developed and maintained by [plural](https://plural.com)
+  This Package is developed and maintained by [plural](https://plural.com)
 
 # };
