@@ -12,3 +12,8 @@ script:
 sudo: false
 matrix:
   fast_finish: true
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false

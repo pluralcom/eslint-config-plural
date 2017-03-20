@@ -29,7 +29,8 @@
     "travis": "npm run --silent test"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "rules/"
   ],
   "keywords": [
     "plural",
@@ -80,7 +81,10 @@
   },
   "peerDependencies": {
     "eslint": ">=3.15.0",
-    "eslint-plugin-import": "^2.2.0"
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-react-native": "^1.0.0"
   },
   "engines": {
     "node": ">= 4"
