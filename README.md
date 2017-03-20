@@ -5,7 +5,7 @@
 
 The linter requires eslint, and react, react-native eslint plugins, to install them run:
 ```
-npm install eslint eslint-plugin-react eslint-plugin-react-native --save-dev
+npm install eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native --save-dev
 ```
 
 Then install eslint-config-plural by runnig:
