@@ -40,6 +40,7 @@ In your eslintrc (or its equivalent) add
 
 
 This Package is developed and maintained by [plural](https://plural.com)
+
 Built with ❤️ in California
 
 # };
