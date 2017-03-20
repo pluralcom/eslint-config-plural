@@ -28,7 +28,7 @@ In your eslintrc (or its equivalent) add
 
 
 ## Parents:
-  eslint-config-plural extends airbnb-base style guide, appending our artistic rules
+eslint-config-plural extends airbnb-base style guide, appending our artistic rules
 
 
 ## Lints:
@@ -36,8 +36,8 @@ In your eslintrc (or its equivalent) add
   - react
   - react native
 
-## [Changelog](https://github.com/pluralcom/eslint-config-plural/releases)
-
+## Changelog
+Check the [changelog](https://github.com/pluralcom/eslint-config-plural/releases) for version details.
 
 This Package is developed and maintained by [plural](https://plural.com)
 
