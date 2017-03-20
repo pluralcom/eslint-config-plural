@@ -29,7 +29,8 @@
     "travis": "npm run --silent test"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "rules/"
   ],
   "keywords": [
     "plural",
