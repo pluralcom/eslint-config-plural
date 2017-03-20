@@ -1,7 +1,6 @@
 {
   "name": "eslint-config-plural",
   "version": "0.1.0",
-  "private": true,
   "description": "ESLint shareable config for the Plural JavaScript code art.",
   "main": "index.js",
   "repository": {
