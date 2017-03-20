@@ -39,6 +39,8 @@ eslint-config-plural extends airbnb-base style guide, appending our artistic rul
 ## Changelog
 Check the [changelog](https://github.com/pluralcom/eslint-config-plural/releases) for version details.
 
+<hr>
+
 This Package is developed and maintained by [plural](https://plural.com)
 
 Built with ❤️ in California
