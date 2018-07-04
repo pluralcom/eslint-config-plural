@@ -1,5 +1,5 @@
 # Plural's Javascript Styleguide {
-How Plural paints its code;
+🎨 How plural paints its code;
 
 [![npm version](https://badge.fury.io/js/eslint-config-plural.svg)](https://badge.fury.io/js/eslint-config-plural) [![Build Status](https://travis-ci.org/pluralcom/eslint-config-plural.svg?branch=master)](https://travis-ci.org/pluralcom/eslint-config-plural)
 
@@ -58,13 +58,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ wit
 2. Add `"extends": "plural/base"` to your .eslintrc
 
 ## Parents:
-eslint-config-plural extends eslint-config-airbnb style guide, appending our rules.
-
-
-## Lints:
-  - es6
-  - react
-  - react native
+eslint-config-plural extends [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) or [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) style guide, appending our rules.
 
 ## Changelog
 Check the [changelog](https://github.com/pluralcom/eslint-config-plural/releases) for version details.
