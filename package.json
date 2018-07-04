@@ -1,16 +1,73 @@
 {
   "name": "eslint-config-plural",
-  "version": "0.1.0",
-  "description": "ESLint shareable config for the Plural JavaScript code art.",
+  "version": "0.2.0",
+  "description": "🎨 How plural paints its code.",
   "main": "index.js",
+  "scripts": {
+    "prelint": "editorconfig-tools check * rules/* test/*",
+    "lint": "eslint .",
+    "pretests-only": "node ./test/requires",
+    "tests-only": "babel-tape-runner ./test/test-*.js",
+    "prepublish": "(not-in-publish || npm test) && safe-publish-latest",
+    "pretest": "npm run --silent lint",
+    "test": "npm run --silent tests-only",
+    "travis": "npm run --silent test"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pluralcom/eslint-config-plural.git"
+    "url": "https://github.com/pluralcom/eslint-config-plural"
   },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "airbnb",
+    "javascript",
+    "styleguide",
+    "es2015",
+    "es2016",
+    "es2017",
+    "es2018",
+    "plural"
+  ],
   "author": {
-    "name": "Plural",
-    "email": "info@plural.com",
-    "url": "https://plural.com"
+    "name": "Ahmed Tarek",
+    "email": "ahmed.tokyo1@gmail.com",
+    "url": "https://github.com/A-Tokyo"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pluralcom/eslint-config-plural/issues"
+  },
+  "homepage": "https://github.com/pluralcom/eslint-config-plural",
+  "dependencies": {
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "object.assign": "^4.1.0",
+    "object.entries": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.5.1",
+    "babel-tape-runner": "^2.0.1",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^4.19.1",
+    "eslint-find-rules": "^3.3.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0",
+    "in-publish": "^2.0.0",
+    "react": ">= 0.13.0",
+    "safe-publish-latest": "^1.1.1",
+    "tape": "^4.9.1"
+  },
+  "peerDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.10.0"
+  },
+  "engines": {
+    "node": ">= 4"
   },
   "contributors": [
     {
@@ -18,74 +75,5 @@
       "email": "ahmed.tokyo1@gmail.com",
       "url": "https://github.com/A-Tokyo"
     }
-  ],
-  "scripts": {
-    "prelint": "editorconfig-tools check * rules/* test/*",
-    "lint": "eslint .",
-    "tests-only": "babel-tape-runner ./test/test-*.js",
-    "pretest": "npm run --silent lint",
-    "test": "npm run --silent tests-only",
-    "travis": "npm run --silent test"
-  },
-  "files": [
-    "index.js",
-    "rules/"
-  ],
-  "keywords": [
-    "plural",
-    "react",
-    "react-native",
-    "code",
-    "quality",
-    "style",
-    "lint",
-    "linter",
-    "jscs",
-    "jshint",
-    "jslint",
-    "eslint",
-    "validate",
-    "code style",
-    "strict",
-    "check",
-    "checker",
-    "verify",
-    "enforce",
-    "hint"
-  ],
-  "bugs": {
-    "url": "https://github.com/pluralcom/eslint-config-plural/issues"
-  },
-  "homepage": "https://github.com/pluralcom/eslint-config-plural#readme",
-  "dependencies": {
-    "eslint": "^3.17.1",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0",
-    "eslint-plugin-react-native": "^1.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^3.15.0",
-    "tape": "^4.6.3",
-    "babel-preset-airbnb": "^2.2.3",
-    "babel-tape-runner": "^2.0.1",
-    "editorconfig-tools": "^0.1.1",
-    "eslint": "^3.17.1",
-    "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-import": "^2.2.0",
-    "in-publish": "^2.0.0",
-    "safe-publish-latest": "^1.1.1",
-    "tape": "^4.6.3"
-  },
-  "peerDependencies": {
-    "eslint": ">=3.15.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.0",
-    "eslint-plugin-react-native": "^1.0.0"
-  },
-  "engines": {
-    "node": ">= 4"
-  }
+  ]
 }
