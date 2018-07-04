@@ -3,6 +3,7 @@
     ".DS_Store": "explorerExcludedFiles",
     "coverage/": "explorerExcludedFiles",
     "node_modules/": "explorerExcludedFiles",
-    "npm-debug.log": "explorerExcludedFiles"
+    "npm-debug.log": "explorerExcludedFiles",
+    ".vscode": "explorerExcludedFiles"
   }
 }

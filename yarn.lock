@@ -1012,6 +1012,14 @@ eslint-config-airbnb-base@^13.0.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
+eslint-config-airbnb@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-17.0.0.tgz#1bb8c4255483320bb68c3b614f71ae6058b0b2db"
+  dependencies:
+    eslint-config-airbnb-base "^13.0.0"
+    object.assign "^4.1.0"
+    object.entries "^1.0.4"
+
 eslint-find-rules@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/eslint-find-rules/-/eslint-find-rules-3.3.1.tgz#46a86c2fc9e9be2b33235234e1820e1f045793a9"

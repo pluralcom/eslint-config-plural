@@ -1,6 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import test from 'tape';
+const fs = require('fs');
+const path = require('path');
+const test = require('tape');
 
 const base = require('../base');
 
