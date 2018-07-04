@@ -8,3 +8,5 @@ coverage/
 # local files
 .DS_Store
 
+# editors
+.vscode
