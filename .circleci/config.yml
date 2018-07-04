@@ -7,38 +7,35 @@ jobs:
   build:
     docker:
       # Specify the version you desire here
-      - image: circleci/node:6.10
-      # Specify service dependencies here if necessary
-      # Setup elasticsearch and disable xpack security (not needed in testing env)
-      - image: docker.elastic.co/elasticsearch/elasticsearch:5.6.2
-        environment:
-          xpack.security.enabled: 'false'
+      - image: circleci/node:7.10
 
     working_directory: ~/repo
 
     steps:
       - checkout
 
-      # Download and cache dependencies
+      # Download and cache de¯pendencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-      
+
       # Setup npm token
-      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+          name: Setup npmrc with the npm token
+          command: |
+            rm -f .npmrc
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 
       # Install dependencies
-      - run: yarn install
+      - run: yarn
 
       # Save cache
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # run tests!
+
+      # run circleci tests script
       - run: yarn circleci
-
-
