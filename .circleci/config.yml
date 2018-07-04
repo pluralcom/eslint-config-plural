@@ -13,20 +13,13 @@ jobs:
 
     steps:
       - checkout
-
+      
       # Download and cache de¯pendencies
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
-      # Setup npm token
-      - run:
-          name: Setup npmrc with the npm token
-          command: |
-            rm -f .npmrc
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 
       # Install dependencies
       - run: yarn
