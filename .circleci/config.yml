@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - checkout
-      
+
       # Download and cache de¯pendencies
       - restore_cache:
           keys:
@@ -31,4 +31,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run circleci tests script
-      - run: yarn circleci
+      - run: yarn test
