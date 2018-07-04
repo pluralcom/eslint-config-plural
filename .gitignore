@@ -1,6 +1,10 @@
-.DS_Store
-coverage/
+# node
 node_modules/
 npm-debug.log
 
-.vscode
+# testing
+coverage/
+
+# local files
+.DS_Store
+
