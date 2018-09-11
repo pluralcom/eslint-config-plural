@@ -42,9 +42,7 @@
   "homepage": "https://github.com/pluralcom/eslint-config-plural",
   "dependencies": {
     "eslint-config-airbnb": "17.1.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "object.assign": "^4.1.0",
-    "object.entries": "^1.0.4"
+    "eslint-config-airbnb-base": "^13.1.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.5.3",
