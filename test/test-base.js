@@ -7,7 +7,7 @@ const base = require('../base');
 const files = { base };
 
 fs.readdirSync(path.join(__dirname, '../rules')).forEach((name) => {
-  if (name === 'react.js' || name === 'react-a11y.js') {
+  if (['react.js', 'react-a11y.js', 'react-hooks.js'].includes(name)) {
     return;
   }
 
