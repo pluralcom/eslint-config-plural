@@ -1,13 +1,13 @@
-const fs = require('fs');
-const path = require('path');
-const test = require('tape');
+import fs from 'fs';
+import path from 'path';
+import test from 'tape';
 
 const base = require('../base');
 
 const files = { base };
 
 fs.readdirSync(path.join(__dirname, '../rules')).forEach((name) => {
-  if (['react.js', 'react-a11y.js', 'react-hooks.js'].includes(name)) {
+  if (name === 'react.js' || name === 'react-a11y.js') {
     return;
   }
 
@@ -28,7 +28,7 @@ Object.keys(files).forEach((name) => {
 
     // scan rules for react/ and fail if any exist
     const reactRuleIds = Object.keys(config.rules)
-      .filter(ruleId => ruleId.indexOf('react/') === 0);
+      .filter((ruleId) => ruleId.indexOf('react/') === 0);
     t.deepEquals(reactRuleIds, [], 'there are no react/ rules');
   });
 });
