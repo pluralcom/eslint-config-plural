@@ -1,0 +1,15 @@
+# # Head rules
+
+# Apply label "feature" if base matches "feature/*"
+feature:
+  head: "feature/*"
+
+# Apply label "bug" if base matches "hotfix/*"
+bug:
+  head: ["hotfix/*", "bugfix/*"]
+
+# # Base rules
+
+# Apply label "release" if base matches "master"
+release:
+  base: "master"
