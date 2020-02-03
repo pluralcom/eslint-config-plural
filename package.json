@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prelint": "eclint check * rules/* test/*",
-    "lint": "eslint .",
+    "lint": "eslint ./rules",
     "pretests-only": "node ./test/requires",
     "tests-only": "babel-tape-runner ./test/test-*.js",
     "prepublish": "(not-in-publish || npm test) && safe-publish-latest",
