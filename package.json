@@ -21,13 +21,17 @@
     "eslint",
     "eslintconfig",
     "config",
-    "airbnb",
     "javascript",
-    "styleguide",
+    "style guide",
+    "lint",
+    "airbnb",
+    "es6",
     "es2015",
     "es2016",
     "es2017",
     "es2018",
+    "react",
+    "jsx",
     "plural"
   ],
   "author": {
@@ -41,31 +45,31 @@
   },
   "homepage": "https://github.com/pluralcom/eslint-config-plural",
   "dependencies": {
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-airbnb-base": "^14.0.0"
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.8.4",
-    "babel-preset-airbnb": "^4.4.0",
+    "@babel/runtime": "^7.11.2",
+    "babel-preset-airbnb": "^4.5.0",
     "babel-tape-runner": "^3.0.0",
     "eclint": "^2.8.1",
-    "eslint": "^5.16.0 || ^6.7.2",
-    "eslint-find-rules": "^3.4.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "in-publish": "^2.0.0",
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-find-rules": "^3.6.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0",
+    "in-publish": "^2.0.1",
     "react": ">= 0.13.0",
     "safe-publish-latest": "^1.1.4",
-    "tape": "^5.0.0-next.4"
+    "tape": "^5.0.1"
   },
   "peerDependencies": {
-    "eslint": "^5.16.0 || ^6.7.2",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0"
   },
   "engines": {
     "node": ">= 6"
