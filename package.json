@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-plural",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "🎨 How plural paints its code.",
   "main": "index.js",
   "scripts": {
@@ -59,6 +59,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0",
+    "eslint-plugin-react-perf": "^3.2.4",
     "in-publish": "^2.0.1",
     "react": ">= 0.13.0",
     "safe-publish-latest": "^1.1.4",
