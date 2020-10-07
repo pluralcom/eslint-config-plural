@@ -1,5 +1,7 @@
 module.exports = {
-  plugins: ['react'],
+  plugins: ['react', 'eslint-plugin-react-perf'],
+
+  extends: ['plugin:react-perf/recommended'],
 
   parserOptions: {
     ecmaFeatures: {
