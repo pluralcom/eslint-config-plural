@@ -78,7 +78,7 @@ jobs:
       - name: Slack Notification - NPM release
         uses: rtCamp/action-slack-notify@v2.0.0
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_RELEASE_BOT }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_RELEASE_BOT_PUBLIC }}
           SLACK_USERNAME: "npmBot"
           SLACK_CHANNEL: "releases_npm"
           SLACK_ICON: "https://avatars0.githubusercontent.com/u/6078720?s=32&v=4"
