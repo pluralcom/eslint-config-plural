@@ -1,7 +1,7 @@
 # Plural's Javascript Styleguide {
 🎨 How plural paints its code;
 
-[![npm version](https://badge.fury.io/js/eslint-config-plural.svg)](https://badge.fury.io/js/eslint-config-plural) ![Test Release Publish](https://github.com/pluralcom/eslint-config-plural/workflows/Test%20Release%20Publish/badge.svg?branch=main)
+[![npm version](https://badge.fury.io/js/eslint-config-plural.svg)](https://badge.fury.io/js/eslint-config-plural) [![Test Release Publish](https://github.com/pluralcom/eslint-config-plural/actions/workflows/test-publish.yml/badge.svg)](https://github.com/pluralcom/eslint-config-plural/actions/workflows/test-publish.yml)
 
 ## Getting Started
 
