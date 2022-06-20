@@ -26,12 +26,16 @@
     "lint",
     "airbnb",
     "es6",
+    "es10",
     "es2015",
     "es2016",
     "es2017",
     "es2018",
-    "react",
+    "es2020",
+    "es2022",
     "jsx",
+    "react",
+    "react-native",
     "plural"
   ],
   "author": {
