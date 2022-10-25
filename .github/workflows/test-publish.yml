@@ -78,7 +78,7 @@ jobs:
       - name: Create JIRA release
         uses: darioblanco/jira-wizard@main
         with:
-          app: ${{ env.GITHUB_REPOSITORY }}
+          app: ${{ github.repository }}
           host: ${{ secrets.JIRA_HOST }}
           email: ${{ secrets.JIRA_EMAIL }}
           apiToken: ${{ secrets.JIRA_API_TOKEN }}
