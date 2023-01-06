@@ -14,5 +14,11 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': 'off',
     'react/require-default-props': [0],
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+      },
+    ],
   },
 };
