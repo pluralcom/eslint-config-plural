@@ -8,7 +8,7 @@ module.exports = {
       'error',
       'ignorePackages',
       {
-        ': 'never',
+        '': 'never',
         js: 'never',
         jsx: 'never',
         ts: 'never',
