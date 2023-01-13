@@ -1,8 +1,14 @@
 {
   "name": "eslint-config-plural",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "description": "🎨 How plural paints its code.",
   "main": "index.js",
+  "includes": [
+    "rules",
+    "base",
+    "index.js",
+    "tsconfig.json"
+  ],
   "scripts": {
     "prelint": "eclint check * rules/* test/*",
     "lint": "eslint ./rules",
@@ -33,6 +39,8 @@
     "es2018",
     "es2020",
     "es2022",
+    "es2023",
+    "es2024",
     "jsx",
     "react",
     "react-native",
