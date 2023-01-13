@@ -57,6 +57,18 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ wit
 1. follow the steps above
 2. Add `"extends": "plural/base"` to your .eslintrc
 
+## Typescript
+
+To extend Typescript configuration you should extend the `.tsconfig.json` file in your `tsconfig.json`.
+```json
+{
+  "extends": "./node_modules/eslint-config-plural/tsconfig",
+  "compilerOptions": {
+    "strictNullChecks": false
+  }
+}
+```
+
 ## Parents:
 eslint-config-plural extends [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) or [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) style guide, appending our rules.
 
