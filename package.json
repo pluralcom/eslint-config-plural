@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-plural",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "🎨 How plural paints its code.",
   "main": "index.js",
   "includes": [
@@ -28,6 +28,8 @@
     "eslintconfig",
     "config",
     "javascript",
+    "typescript",
+    "tslint",
     "style guide",
     "lint",
     "airbnb",
@@ -41,6 +43,7 @@
     "es2022",
     "es2023",
     "es2024",
+    "es2025",
     "jsx",
     "react",
     "react-native",
