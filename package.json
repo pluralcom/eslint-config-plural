@@ -1,9 +1,9 @@
 {
   "name": "eslint-config-plural",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "🎨 How plural paints its code.",
   "main": "index.js",
-  "includes": [
+  "files": [
     "rules",
     "base",
     "index.js",
