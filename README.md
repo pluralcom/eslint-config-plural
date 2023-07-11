@@ -1,8 +1,7 @@
 # Plural's Javascript Styleguide {
 🎨 How plural paints its code;
 
-[![npm version](https://badge.fury.io/js/eslint-config-plural.svg)](https://badge.fury.io/js/eslint-config-plural) [![Test Release Publish](https://github.com/pluralcom/eslint-config-plural/actions/workflows/test-publish.yml/badge.svg)](https://github.com/pluralcom/eslint-config-plural/actions/workflows/test-publish.yml)
-
+[![npm version](https://badge.fury.io/js/eslint-config-plural.svg)](https://badge.fury.io/js/eslint-config-plural)
 ## Getting Started
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+ and React. It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plugin-jsx-a11y` and `eslint-plugin-react-perf`. If you don't need React, see [base entry point](#base-entry-point).
