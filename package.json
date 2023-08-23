@@ -71,6 +71,7 @@
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-find-rules": "^4.1.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^46.5.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
@@ -83,6 +84,7 @@
   "peerDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^46.5.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",

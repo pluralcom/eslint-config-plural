@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['jsdoc'],
   rules: {
     'arrow-parens': 0,
     camelcase: 0,
@@ -14,6 +15,34 @@ module.exports = {
         ts: 'never',
         tsx: 'never',
         json: 'never',
+      },
+    ],
+    /** Enforces documentation */
+    'jsdoc/require-jsdoc': [
+      'warn',
+      {
+        // 'require': {
+        //   'ArrowFunctionExpression': true,
+        //   'ClassDeclaration': true,
+        //   'ClassExpression': true,
+        //   'FunctionDeclaration': true,
+        //   'FunctionExpression': true,
+        //   'MethodDefinition': true
+        // },
+        contexts: [
+          // 'ArrowFunctionExpression',
+          // 'FunctionDeclaration',
+          // 'FunctionExpression',
+          // 'MethodDefinition',
+          // 'Property',
+          'TSDeclareFunction',
+          'TSEnumDeclaration',
+          'TSInterfaceDeclaration',
+          // 'TSMethodSignature',
+          'TSPropertySignature',
+          // 'TSTypeAliasDeclaration',
+          // 'VariableDeclaration'
+        ],
       },
     ],
   },
