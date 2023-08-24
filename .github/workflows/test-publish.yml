@@ -86,7 +86,7 @@ jobs:
           version: ${{ steps.ownEnvVars.outputs.PACKAGE_VERSION }}
           draft: false
       - name: Slack Notification - NPM release
-        uses: rtCamp/action-slack-notify@v2.0.0
+        uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_RELEASE_BOT_PUBLIC }}
           SLACK_USERNAME: "npmBot"
