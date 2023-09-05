@@ -39,7 +39,7 @@ module.exports = {
           'TSEnumDeclaration',
           'TSInterfaceDeclaration',
           // 'TSMethodSignature',
-          'TSPropertySignature',
+          // 'TSPropertySignature',
           // 'TSTypeAliasDeclaration',
           // 'VariableDeclaration'
         ],
