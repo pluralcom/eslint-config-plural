@@ -25,7 +25,7 @@ module.exports = {
         //   'ArrowFunctionExpression': true,
         //   'ClassDeclaration': true,
         //   'ClassExpression': true,
-        //   'FunctionDeclaration': true,
+        "FunctionDeclaration": false,
         //   'FunctionExpression': true,
         //   'MethodDefinition': true
         // },
@@ -37,9 +37,9 @@ module.exports = {
           // 'Property',
           // 'TSDeclareFunction',
           'TSEnumDeclaration',
-          'TSInterfaceDeclaration',
+          // 'TSInterfaceDeclaration',
           // 'TSMethodSignature',
-          // 'TSPropertySignature',
+          'TSPropertySignature'
           // 'TSTypeAliasDeclaration',
           // 'VariableDeclaration'
         ],
