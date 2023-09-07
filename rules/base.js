@@ -21,14 +21,14 @@ module.exports = {
     'jsdoc/require-jsdoc': [
       'warn',
       {
-        // 'require': {
-        //   'ArrowFunctionExpression': true,
-        //   'ClassDeclaration': true,
-        //   'ClassExpression': true,
-        "FunctionDeclaration": false,
-        //   'FunctionExpression': true,
-        //   'MethodDefinition': true
-        // },
+        require: {
+          //   'ArrowFunctionExpression': true,
+          //   'ClassDeclaration': true,
+          //   'ClassExpression': true,
+          FunctionDeclaration: false,
+          //   'FunctionExpression': true,
+          //   'MethodDefinition': true
+        },
         contexts: [
           // 'ArrowFunctionExpression',
           // 'FunctionDeclaration',
