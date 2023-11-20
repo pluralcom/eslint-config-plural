@@ -11,7 +11,11 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get yarn cache
         id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "dir<<$EOF" >> $GITHUB_OUTPUT
+          echo "$(yarn cache dir)" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
       - uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
@@ -43,7 +47,11 @@ jobs:
       - uses: actions/checkout@v3
       - name: Get yarn cache
         id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+        run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "dir<<$EOF" >> $GITHUB_OUTPUT
+          echo "$(yarn cache dir)" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
       - uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
@@ -59,12 +67,17 @@ jobs:
       - name: Setup env vars
         id: ownEnvVars
         run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           # Set PACKAGE_VERSION
           PACKAGE_VERSION=$(node -p -e "require('./package.json').version")
-          echo ::set-output name=PACKAGE_VERSION::$PACKAGE_VERSION
+          echo "PACKAGE_VERSION<<$EOF" >> $GITHUB_OUTPUT
+          echo "$PACKAGE_VERSION" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
           # Set COMMIT_LOG
           COMMIT_LOG=`git log $(git describe --tags --abbrev=0)..HEAD --date=iso-local --format='%cd %h %an - %s  '`
-          echo ::set-output name=COMMIT_LOG::$COMMIT_LOG
+          echo "COMMIT_LOG<<$EOF" >> $GITHUB_OUTPUT
+          echo "$COMMIT_LOG" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
       - name: npm publish
         run: npm publish
         env:
