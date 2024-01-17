@@ -38,7 +38,7 @@ ${body}}
 test('validate react methods order', (t) => {
   t.test('make sure our eslintrc has React and JSX linting dependencies', (t) => {
     t.plan(2);
-    t.deepEqual(reactRules.plugins, ['react', 'eslint-plugin-react-perf']);
+    t.deepEqual(reactRules.plugins, ['react', 'eslint-plugin-react-perf', 'eslint-plugin-react-hooks-docs']);
     t.deepEqual(reactA11yRules.plugins, ['jsx-a11y', 'react']);
   });
 
