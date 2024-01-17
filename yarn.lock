@@ -2077,6 +2077,13 @@ eslint-plugin-jsx-a11y@^6.5.1:
     language-tags "^1.0.5"
     minimatch "^3.0.4"
 
+eslint-plugin-react-hooks-docs@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks-docs/-/eslint-plugin-react-hooks-docs-0.0.1.tgz#a4bd94b66880a2a39e18e510161e0ee0db1f4a8c"
+  integrity sha512-eaHeQB77v9bucj5F+to9JUEcrZ5P4360kXPzMA0MTdb9zCv8H41G2QyORaJS2I9L2AOV3w0vxX3F9H9FNY4oNA==
+  dependencies:
+    requireindex "~1.2.0"
+
 eslint-plugin-react-hooks@^4.5.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
@@ -3758,6 +3765,11 @@ require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
   integrity sha512-IqSUtOVP4ksd1C/ej5zeEh/BIP2ajqpn8c5x+q99gvcIG/Qf0cud5raVnE/Dwd0ua9TXYDoDc0RE5hBSdz22Ug==
+
+requireindex@~1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.2.0.tgz#3463cdb22ee151902635aa6c9535d4de9c2ef1ef"
+  integrity sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==
 
 resolve-from@^4.0.0:
   version "4.0.0"
