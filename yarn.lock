@@ -2077,10 +2077,10 @@ eslint-plugin-jsx-a11y@^6.5.1:
     language-tags "^1.0.5"
     minimatch "^3.0.4"
 
-eslint-plugin-react-hooks-docs@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks-docs/-/eslint-plugin-react-hooks-docs-0.0.1.tgz#a4bd94b66880a2a39e18e510161e0ee0db1f4a8c"
-  integrity sha512-eaHeQB77v9bucj5F+to9JUEcrZ5P4360kXPzMA0MTdb9zCv8H41G2QyORaJS2I9L2AOV3w0vxX3F9H9FNY4oNA==
+eslint-plugin-react-hooks-docs@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks-docs/-/eslint-plugin-react-hooks-docs-0.0.2.tgz#8d8cec68395f956b7bb0d5c2df48ff225fed0d7e"
+  integrity sha512-d/1+Qb4CBTzZB1NCikBSC7hI20+qb7rzc7KMqfyaWrVQ5XjtwGa/w68rcaO/SwfCuauQ1qhZlNnzdw9yiWDn8w==
   dependencies:
     requireindex "~1.2.0"
 
