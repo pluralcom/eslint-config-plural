@@ -20,6 +20,5 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
-    'react-hooks-docs/docs': 2,
   },
 };
