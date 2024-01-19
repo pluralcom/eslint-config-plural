@@ -19,12 +19,12 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ubuntu-latest-node-18.x-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: ubuntu-latest-node-18.19.x-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ubuntu-latest-node-18.x-yarn-
+            ubuntu-latest-node-18.19.x-yarn-
       - uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 18.19
           registry-url: https://registry.npmjs.org/
       - name: Install
         run: yarn install --frozen-lockfile
@@ -55,12 +55,12 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ubuntu-latest-node-18.x-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: ubuntu-latest-node-18.19.x-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ubuntu-latest-node-18.x-yarn-
+            ubuntu-latest-node-18.19.x-yarn-
       - uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 18.19
           registry-url: https://registry.npmjs.org/
       - name: Install
         run: yarn install --frozen-lockfile
