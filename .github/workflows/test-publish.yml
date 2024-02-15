@@ -24,7 +24,7 @@ jobs:
             ubuntu-latest-node-18.19.x-yarn-
       - uses: actions/setup-node@v3
         with:
-          node-version: 18.19
+          node-version: 20.11
           registry-url: https://registry.npmjs.org/
       - name: Install
         run: yarn install --frozen-lockfile
@@ -60,7 +60,7 @@ jobs:
             ubuntu-latest-node-18.19.x-yarn-
       - uses: actions/setup-node@v3
         with:
-          node-version: 18.19
+          node-version: 20.11
           registry-url: https://registry.npmjs.org/
       - name: Install
         run: yarn install --frozen-lockfile
